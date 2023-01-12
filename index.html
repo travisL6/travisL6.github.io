@@ -58,19 +58,22 @@
                 <li>JavaScript</li>
             </ul>
             <h4>Education</h4>
+            <p>Associate's degree in Software Development from Northeast Wisconsin Technical College</p>
             <p>Bachelor's degree in Computer Science from University of Wisconsin - Green Bay</p>
         </section>
         <section id="contact">
-            <h3>Contact Me</h3>
-            <form name="contactForm" onsubmit="return validateForm()" action="#">
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name" placeholder="Your name" required><br>
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" placeholder="Your email" required><br>
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message" rows="5" placeholder="Your message" required></textarea><br>
-                <input type="submit" value="Send Message">
-            </form> 
+            <h3>Contact</h3>
+            <form id="fs-frm" name="contactForm" accept-charset="utf-8" action="https://formspree.io/f/{form_id}" method="post">
+                <fieldset id="fs-frm-inputs">
+                  <label for="full-name">Full Name</label>
+                  <input type="text" name="name" id="name" placeholder="First and Last" required>
+                  <label for="email-address">Email Address</label>
+                  <input type="email" name="email" id="email" placeholder="email@domain.tld" required>
+                  <label for="message">Message</label>
+                  <textarea rows="5" name="message" id="message" placeholder="Your Message" required></textarea>
+                </fieldset>
+                <input type="submit" value="Submit">
+              </form>
             <p>Email: travis.lambert@yahoo.com</p>
-            <p>Phone: (920)-621-5834</p>
+            <p>Phone: (920)621-5834</p>
             <p>GitHub: <a href="https://github.com/travisL6">https://github.com/travisL6</a></p>
