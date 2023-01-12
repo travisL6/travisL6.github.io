@@ -2,6 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: white;
 }
 
 header {
@@ -49,27 +50,23 @@ nav {
 }
 
 #menu a:hover {
-    color: #ccc;
+    color: gray;
 }
 
-#menuButton {
-    display: none;
+#theme-toggle {
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #0f0f0f;
 }
 
-nav ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+#theme-toggle:hover {
+    background-color: #0f0f0f;
+    color: #fff;
 }
 
-nav li {
-    margin: 0 10px;
-}
-
-nav a {
-    color: #333;
-    text-decoration: none;
+#theme-toggle:active {
+    background-color: white;
 }
 
 main {
@@ -127,7 +124,10 @@ li {
 
 a {
     color: #069;
-    text-decoration: none;
+}
+
+a:hover {
+    color: #0f0f0f;
 }
 
 form {
@@ -147,7 +147,7 @@ form {
     border: none;
     border-radius: 0;
     display: block;
-    width: 100%;
+    width: 75%;
     padding: 0;
     margin: 0;
 }
@@ -176,10 +176,9 @@ form {
 #fs-frm input:focus,
 #fs-frm select:focus,
 #fs-frm textarea:focus {
-    background-color: white;
     outline-style: solid;
     outline-width: thin;
-    outline-color: gray;
+    outline-color: rgba(0, 0, 0, 0.2);
     outline-offset: -1px;
 }
 

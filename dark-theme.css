@@ -1,0 +1,207 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0f0f0f;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+header h2 {
+    margin: 0;
+    font-size: 1.5em;
+    font-weight: normal;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#menu li {
+    margin: 0 10px;
+}
+
+#menu a {
+    color: #fff;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+#menu a:hover {
+    color: #0f0f0f;
+}
+
+#theme-toggle {
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #0f0f0f;
+    color: #fff;
+}
+
+#theme-toggle:hover {
+    background-color: #fff;
+    color: #0f0f0f;
+}
+
+#theme-toggle:active {
+    background-color: #fff;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+section {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+section#about {
+    background-color: #333;
+    color: #fff;
+}
+
+section#projects {
+    background-color: #0f0f0f;
+    color: #fff;
+}
+
+section#skills {
+    background-color: #333;
+    color: #fff;
+}
+
+section#contact {
+    background-color: #0f0f0f;
+    color: #fff;
+}
+
+h3 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+h4 {
+    margin: 10px 0 5px 0;
+    font-size: 1.2em;
+}
+
+p {
+    margin: 10px 0;
+    font-size: 1em;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    margin: 5px 0;
+}
+
+a {
+    color: #069;
+}
+
+a:hover {
+    color: #fff;
+}
+
+form {
+    margin: 20px 0;
+}
+
+#fs-frm input,
+#fs-frm select,
+#fs-frm textarea,
+#fs-frm fieldset,
+#fs-frm optgroup,
+#fs-frm label,
+#fs-frm #card-element:disabled {
+    font-family: inherit;
+    font-size: 100%;
+    color: inherit;
+    border: none;
+    border-radius: 0;
+    display: block;
+    width: 75%;
+    padding: 0;
+    margin: 0;
+}
+
+#fs-frm label,
+#fs-frm legend,
+#fs-frm ::placeholder {
+    font-size: .825rem;
+    margin-bottom: .5rem;
+    padding-top: .2rem;
+    display: flex;
+    align-items: baseline;
+}
+
+/* border, padding, margin, width */
+#fs-frm input,
+#fs-frm select,
+#fs-frm textarea,
+#fs-frm #card-element {
+    border: 1px solid rgba(225, 225, 225, 0.65);
+    background-color: #333;
+    color: #fff;
+    padding: .75em 1rem;
+    margin-bottom: 1.5rem;
+}
+
+#fs-frm input:focus,
+#fs-frm select:focus,
+#fs-frm textarea:focus {
+    outline-style: solid;
+    outline-width: thin;
+    outline-color: #fff;
+    outline-offset: -1px;
+}
+
+#fs-frm [type="button"],
+#fs-frm [type="submit"],
+#fs-frm [type="reset"] {
+    width: auto;
+    cursor: pointer;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+}
+
+#fs-frm [type="submit"],
+#fs-frm [type="reset"] {
+    margin-bottom: 0;
+}
+
+#fs-frm input[type="submit"]:hover {
+    background-color: #0f0f0f;
+}

@@ -1,9 +1,22 @@
-function validateForm() {
-    var name = document.forms["contactForm"]["name"].value;
-    var email = document.forms["contactForm"]["email"].value;
-    var message = document.forms["contactForm"]["message"].value;
-    if (name == "" || email == "" || message == "") {
-        alert("All fields are required.");
-        return false;
+localStorage.setItem('theme', 'dark-theme.css');
+
+document.addEventListener('DOMContentLoaded', () => {
+
+    const themeStylesheet = document.getElementById('theme');
+    const storedTheme = localStorage.getItem('theme');
+    if(storedTheme){
+        themeStylesheet.href = storedTheme;
     }
-}
+    const themeToggle = document.getElementById('theme-toggle');
+    themeToggle.addEventListener('click', () => {
+        // if it's light -> go dark
+        if(themeStylesheet.href.includes('light')){
+            themeStylesheet.href = 'dark-theme.css';
+        } else {
+            // if it's dark -> go light
+            themeStylesheet.href = 'light-theme.css';
+        }
+        // save the preference to localStorage
+        localStorage.setItem('theme',themeStylesheet.href)  
+    })
+})
