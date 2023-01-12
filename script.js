@@ -1,5 +1,3 @@
-localStorage.setItem('theme', 'dark-theme.css');
-
 document.addEventListener('DOMContentLoaded', () => {
 
     const themeStylesheet = document.getElementById('theme');
