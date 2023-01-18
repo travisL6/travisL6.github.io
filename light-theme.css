@@ -204,3 +204,21 @@ form {
 #fs-frm input[type="submit"]:hover {
     background-color: gray;
 }
+
+.fa-solid,
+.fa-brands {
+    font-size: larger;
+    color: #333;
+}
+
+.fa-solid:hover,
+.fa-brands:hover {
+    color: gray;
+}
+
+#social {
+    margin-left: 5em;
+}
+.fa-linkedin {
+    padding-left: 20px;
+}
